@@ -1,3 +1,5 @@
+## This repo ist still under construction. It will be finished within the next days.
+
 This is the official code repository for the paper [Model Interpretability and Rationale Extraction by Input Mask Optimization](https://aclanthology.org/2023.findings-acl.867/)
 published at ACL 2023. The repository contains the code for two experiments regarding interpreting
 neural network decisions, one on textual data in the form of movie reviews and one on imagenet images.
