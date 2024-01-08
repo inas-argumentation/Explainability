@@ -28,14 +28,16 @@ movie_reviews/
 
 The code for running to movie reviews experiment is located in the `movie_reviews` folder.
 
-Running the file `run_movie_reviews.py` will recreate the experiments from the paper using the provided code.
-All data from the original experiment is included in the repo. This includes the trained classifier weights to allow
-for testing own approaches or hyperparameter settings using the same model, as well as the saved masks that were
-created in the course of the experiment.
+To use the same classifier weights that was used in the original experiment, or to view/evaluate the predicted masks from the
+original experiment, please download the files `clf_MaRC_paper.pkl` and `movie_reviews_predictions.zip` from
+[https://zenodo.org/records/10470789](https://zenodo.org/records/10470789). Then, place `clf_MaRC_paper.pkl` in the folder
+`movie_reviews/saved_models`, and place the folder `MaRC_paper` from `movie_reviews_predictions.zip` in the folder
+`movie_reviews/predictions`.
 
-By running `run_movie_reviews.py`, the default setup will evaluate the existing masks from the original experiments.
+Running the file `run_movie_reviews.py` will recreate the experiments from the paper using the provided code.
+The default setup will evaluate the existing masks from the original experiments.
 To create own masks using the same model weights, you can rename the folder `movie_reviews/predictions/MaRC_paper` to
-any other name, which lets the code think that no masks are present, so that they will be generated again.
+any other name (or not place the data there in the first place), which lets the code think that no masks are present, so that they will be generated again.
 
 ### Running Own Experiments
 
@@ -114,13 +116,16 @@ but can be useful for hyperparameter tuning.
 
 The code for running to movie reviews experiment is located in the `imagenet` folder.
 
+To view/evaluate the predicted masks from the original experiment, please download the file `imagenet_predictions.zip` from
+[https://zenodo.org/records/10470789](https://zenodo.org/records/10470789). Then, place the folder `MaRC_paper` from `imagenet_predictions.zip` in the folder
+`imagenet/predictions`.
+
 Running the file `run_imagenet.py` will recreate the experiments from the paper using the provided code.
-The masks created in the course of the original experiment are included in the repo.
-By running `run_imagenet.py`, the default setup will evaluate the existing masks from the original experiments.
+The default setup will evaluate the existing masks from the original experiments, as long as they were placed correctly.
 To create own masks, it is necessary to change the 
 `run_imagenet.py` file, e.g., by setting a different save_name by altering the argument in the line
 
-```settings.set_save_name("run_0")```
+```settings.set_save_name("MaRC_paper")```
 
 This will lead to new masks being created and saved in `imagenet/predictions/{new_save_name}`.
 
