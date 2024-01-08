@@ -125,7 +125,7 @@ The default setup will evaluate the existing masks from the original experiments
 To create own masks, it is necessary to change the 
 `run_imagenet.py` file, e.g., by setting a different save_name by altering the argument in the line
 
-```settings.set_save_name("run_0")```
+```settings.set_save_name("MaRC_paper")```
 
 This will lead to new masks being created and saved in `imagenet/predictions/{new_save_name}`.
 
