@@ -31,7 +31,7 @@ The code for running to movie reviews experiment is located in the `movie_review
 To use the same classifier weights that was used in the original experiment, or to view/evaluate the predicted masks from the
 original experiment, please download the files `clf_MaRC_paper.pkl` and `movie_reviews_predictions.zip` from
 [https://zenodo.org/records/10470789](https://zenodo.org/records/10470789). Then, place `clf_MaRC_paper.pkl` in the folder
-`movie_reviews/saved_models`, and place the folder `MaRC_paper' from `movie_reviews_predictions.zip` in the folder
+`movie_reviews/saved_models`, and place the folder `MaRC_paper` from `movie_reviews_predictions.zip` in the folder
 `movie_reviews/predictions`.
 
 Running the file `run_movie_reviews.py` will recreate the experiments from the paper using the provided code.
