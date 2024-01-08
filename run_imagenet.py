@@ -8,8 +8,8 @@ def perform_faithfulness_experiment():
         print(f"\nPerforming faithfulness experiment for {current_model_type} model\n")
         settings.set_model_type(current_model_type)
 
-        # The original masks from the predictions are included. The save_name needs to be set to "run_0" in imagenet/settings.py to use the existing masks.
-        settings.set_save_name("run_0")
+        # The original masks from the predictions are included. The save_name needs to be set to "MaRC_paper" in imagenet/settings.py to use the existing masks.
+        settings.set_save_name("MaRC_paper")
 
         # Predict masks for all methods implemented in this repo
         create_rationales.generate_masks_for_whole_dataset_and_all_methods(split="faith")
@@ -29,8 +29,8 @@ def generate_figure_images():
         print(f"\nCreating figures for {current_model_type} model\n")
         settings.set_model_type(current_model_type)
 
-        # The original masks from the predictions are included. The save_name needs to be set to "run_0" in imagenet/settings.py to use the existing masks.
-        settings.set_save_name("run_0")
+        # The original masks from the predictions are included. The save_name needs to be set to "MaRC_paper" in imagenet/settings.py to use the existing masks.
+        settings.set_save_name("MaRC_paper")
 
         # Predict masks for all methods implemented in this repo
         create_rationales.generate_masks_for_whole_dataset_and_all_methods(split="figure")

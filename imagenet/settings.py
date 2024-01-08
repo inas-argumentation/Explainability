@@ -78,4 +78,4 @@ def set_save_name(save_name):
 # Change arguments here to run different experiments.
 set_model_type(model_types[1])
 # A different save name allows generating new masks (e.g., to test different parameters) without overwriting previously generated masks.
-set_save_name("run_0")
+set_save_name("MaRC_paper")
