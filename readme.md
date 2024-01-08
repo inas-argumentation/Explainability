@@ -117,7 +117,7 @@ but can be useful for hyperparameter tuning.
 The code for running to movie reviews experiment is located in the `imagenet` folder.
 
 To view/evaluate the predicted masks from the original experiment, please download the file `imagenet_predictions.zip` from
-[https://zenodo.org/records/10470789](https://zenodo.org/records/10470789). Then, place the folder `MaRC_paper' from `imagenet_predictions.zip` in the folder
+[https://zenodo.org/records/10470789](https://zenodo.org/records/10470789). Then, place the folder `MaRC_paper` from `imagenet_predictions.zip` in the folder
 `imagenet/predictions`.
 
 Running the file `run_imagenet.py` will recreate the experiments from the paper using the provided code.
