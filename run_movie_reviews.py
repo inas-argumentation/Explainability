@@ -41,18 +41,3 @@ def run_experiment():
 
 if __name__ == '__main__':
     run_experiment()
-    quit()
-    # Train classifier
-    train_classifier.train()
-
-    # Create rationales for all interpretability methods
-    create_rationales.create_rationales_for_complete_data_set_and_all_interpretability_approaches(split="test")
-
-    run_evaluations.evaluate_predictions(method="ablation_no_complement", target_score="F1")
-    quit()
-    # Evaluate predicted rationales
-    for target_score in ["F1", "IoU", "mAP"]:
-        print(f"\nRunning evaluation for the {target_score} target score")
-
-        # The "target_score" influences for which score type the kernel regression is optimized. For the chosen target_score, all scores are computed nevertheless.
-        run_evaluations.evaluate_all_interpretability_methods(target_score=target_score)
